@@ -12,7 +12,7 @@ router.get('/', async(req, res) => {
         }
     }
     try{
-const test = await axios(" https://www.azlyrics.com/lyrics/justinbieber/holy.html");
+const test = await axios(" https://www.azlyrics.com/lyrics/justinbieber/holy.html",config);
 res.send(test.data)
 
     }
